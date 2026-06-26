@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "dev": "npx @smithery/cli dev",
-    "build": "npx @smithery/cli build"
+    "build": "npx @smithery/cli build",
+    "start": "node build/index.js"
   },
   "license": "MIT",
   "engines": {
