@@ -1,23 +1,6 @@
 {
-  "name": "clockify-mcp-server",
-  "version": "1.1.1",
-  "description": "Clockify MCP server",
-  "type": "module",
-  "main": "dist/index.js",
   "scripts": {
-    "build": "npx @smithery/cli build",
-    "start": "node dist/index.js",
-    "prepare": "npm run build"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "latest",
-    "axios": "latest",
-    "dotenv": "latest",
-    "zod": "latest"
-  },
-  "devDependencies": {
-    "@smithery/cli": "latest",
-    "typescript": "latest",
-    "@types/node": "latest"
+    "build": "npx tsc",
+    "start": "node dist/index.js"
   }
 }
