@@ -1,31 +1,23 @@
 {
   "name": "clockify-mcp-server",
   "version": "1.1.1",
-  "main": "index.js",
-  "module": "./src/index.ts",
+  "description": "Clockify MCP server",
   "type": "module",
-  "files": [
-    "dist"
-  ],
+  "main": "dist/index.js",
   "scripts": {
-  "build": "npx @smithery/cli build",
-  "start": "node dist/index.js"
-}
-  "license": "MIT",
-  "engines": {
-    "node": ">=20.0.0"
-  },
-  "devDependencies": {
-    "@smithery/cli": "^1.2.4",
-    "@types/node": "^20.19.7",
-    "ts-node-dev": "^2.0.0",
-    "tsx": "^4.20.3",
-    "typescript": "^5.8.3"
+    "build": "npx @smithery/cli build",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.12.1",
-    "axios": "^1.8.4",
-    "dotenv": "^16.5.0",
-    "zod": "^3.24.2"
+    "@modelcontextprotocol/sdk": "latest",
+    "axios": "latest",
+    "dotenv": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@smithery/cli": "latest",
+    "typescript": "latest",
+    "@types/node": "latest"
   }
 }
